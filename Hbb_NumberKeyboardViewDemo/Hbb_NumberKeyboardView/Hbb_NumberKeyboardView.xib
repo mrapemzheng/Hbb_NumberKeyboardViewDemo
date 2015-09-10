@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Hbb_NumberKeyboardView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fhF-lC-zzU">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="上一项">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="lastOptionDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="E4E-tL-23O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LW2-HP-ysH">
+                    <rect key="frame" x="80" y="0.0" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="增">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="plusingDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BAT-D2-GXr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4VZ-AE-tew">
+                    <rect key="frame" x="160" y="0.0" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="减">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="minusingDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ihB-E9-WEg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jjI-IR-fqM">
+                    <rect key="frame" x="240" y="0.0" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="下一项">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextOptionDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="OcE-Nq-YjP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bEL-JO-ht1">
+                    <rect key="frame" x="240" y="38" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="Hbb_NumberKeyboardView.bundle/deleteBtn.png" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="CXW-g9-O7Q"/>
+                        <outletCollection property="gestureRecognizers" destination="ZEL-ga-vq8" appends="YES" id="lr7-Br-1b4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ra5-sL-DVE">
+                    <rect key="frame" x="240" y="76" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="正负">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="plusOrMinusDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="bIH-hj-nIJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bqz-tv-SQm">
+                    <rect key="frame" x="240" y="114" width="80" height="76"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="0.24710445804195805" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png"/>
+                    <connections>
+                        <action selector="saveDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="y61-9A-clG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dsd-IC-rn3">
+                    <rect key="frame" x="24" y="159" width="32" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" image="Hbb_NumberKeyboardView.bundle/closeBtn.png">
+                        <color key="titleColor" white="0.35000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lrf-nT-Szn"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="hNU-5e-Nh6" userLabel="horizontalLine1">
+                    <rect key="frame" x="0.0" y="38" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="16j-0z-OLz" userLabel="horizontalLine2">
+                    <rect key="frame" x="0.0" y="76" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="mFG-vl-hew" userLabel="horizontalLine3">
+                    <rect key="frame" x="0.0" y="114" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="E3U-AV-w2e" userLabel="horizontalLine4">
+                    <rect key="frame" x="0.0" y="152" width="240" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="hEf-jI-n6m" userLabel="verticalLine3">
+                    <rect key="frame" x="240" y="0.0" width="1" height="192"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="ZFc-DM-hwZ" userLabel="verticalLine2">
+                    <rect key="frame" x="160" y="0.0" width="1" height="192"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="kDI-I9-Cvh" userLabel="verticalLine1">
+                    <rect key="frame" x="80" y="0.0" width="1" height="192"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vc5-5z-TuU">
+                    <rect key="frame" x="0.0" y="38" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="1">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qwd-21-e35"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="05g-4y-Tag">
+                    <rect key="frame" x="80" y="38" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="2">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="mCp-oC-QxD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oac-6b-7Jx">
+                    <rect key="frame" x="160" y="38" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="AMx-Be-Tjh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FVh-NP-PJc">
+                    <rect key="frame" x="0.0" y="76" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="4">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xtx-ON-Qoj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Aj-Fa-sd2">
+                    <rect key="frame" x="80" y="76" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="PPT-BE-BTW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y7G-va-yRY">
+                    <rect key="frame" x="160" y="76" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="6">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ygj-hp-ANj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A1p-sf-KpZ">
+                    <rect key="frame" x="1" y="114" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="7">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Yn-Bp-1bk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zY1-x6-tTO">
+                    <rect key="frame" x="80" y="114" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="8">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="FiQ-Ch-MD8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dbk-en-57I">
+                    <rect key="frame" x="160" y="114" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="9">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1BF-PJ-er4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VKy-X7-d1D">
+                    <rect key="frame" x="80" y="152" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="0">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iz5-bj-fb1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="skX-mw-4Cc">
+                    <rect key="frame" x="160" y="152" width="80" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title=".">
+                        <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png">
+                        <color key="titleColor" white="0.24685861013986013" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="numberDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="AQx-lj-DHP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="add" destination="LW2-HP-ysH" id="jvi-Vf-7w7"/>
+                <outlet property="deleteOne" destination="bEL-JO-ht1" id="F5y-hu-ehA"/>
+                <outlet property="dot" destination="skX-mw-4Cc" id="iam-Qx-1FK"/>
+                <outlet property="eight" destination="zY1-x6-tTO" id="CUF-NL-4BD"/>
+                <outlet property="five" destination="7Aj-Fa-sd2" id="3ef-ba-saI"/>
+                <outlet property="four" destination="FVh-NP-PJc" id="7e7-sI-bPJ"/>
+                <outlet property="hide" destination="dsd-IC-rn3" id="VCb-i5-dBP"/>
+                <outlet property="horizontalLine1" destination="hNU-5e-Nh6" id="3XA-HK-QGg"/>
+                <outlet property="horizontalLine2" destination="16j-0z-OLz" id="Ra7-bI-gj8"/>
+                <outlet property="horizontalLine3" destination="mFG-vl-hew" id="qkk-di-pnX"/>
+                <outlet property="horizontalLine4" destination="E3U-AV-w2e" id="7P3-wl-Vuw"/>
+                <outlet property="lastOptionBtn" destination="fhF-lC-zzU" id="jP8-1W-ri1"/>
+                <outlet property="minus" destination="4VZ-AE-tew" id="5G2-FF-3cI"/>
+                <outlet property="nextOption" destination="jjI-IR-fqM" id="Cfs-TU-90Y"/>
+                <outlet property="nine" destination="Dbk-en-57I" id="oaA-ZE-fvd"/>
+                <outlet property="one" destination="vc5-5z-TuU" id="l2i-sP-Q2R"/>
+                <outlet property="plusOrMinus" destination="Ra5-sL-DVE" id="VPD-zP-fne"/>
+                <outlet property="save" destination="bqz-tv-SQm" id="0Xq-El-znU"/>
+                <outlet property="seven" destination="A1p-sf-KpZ" id="4nG-0c-dFa"/>
+                <outlet property="six" destination="Y7G-va-yRY" id="M5V-RQ-4Nq"/>
+                <outlet property="three" destination="oac-6b-7Jx" id="SgM-j8-a9S"/>
+                <outlet property="two" destination="05g-4y-Tag" id="EBJ-X8-5na"/>
+                <outlet property="verticalLine1" destination="kDI-I9-Cvh" id="UjN-5x-YTi"/>
+                <outlet property="verticalLine2" destination="ZFc-DM-hwZ" id="pQV-MR-15t"/>
+                <outlet property="verticalLine3" destination="hEf-jI-n6m" id="6Ul-8X-lrK"/>
+                <outlet property="zero" destination="VKy-X7-d1D" id="Koa-JT-6nz"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="273"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ZEL-ga-vq8">
+            <connections>
+                <action selector="longPressGesture:" destination="iN0-l3-epB" id="lHJ-co-PWc"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Hbb_NumberKeyboardView.bundle/closeBtn.png" width="16" height="16"/>
+        <image name="Hbb_NumberKeyboardView.bundle/deleteBtn.png" width="16" height="16"/>
+        <image name="Hbb_NumberKeyboardView.bundle/keyboardNum_g.png" width="16" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
